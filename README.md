@@ -13,6 +13,9 @@
 - JavaScript ES6+
 
 ## 📁 Cấu trúc thư mục
+
+
+```text
 src/
 ├─ components/
 │  ├─ Sidebar.jsx
@@ -22,7 +25,7 @@ src/
 ├─ pages/
 │  ├─ Login.jsx
 │  └─ Dashboard.jsx
-├─ App.jsx
+└─ App.jsx
 
 ## 🔐 Login Page
 - Xây dựng giao diện đăng nhập (UI only)
