@@ -1,86 +1,52 @@
-Dự án được xây dựng để làm quen với ReactJS cơ bản, tập trung vào:
+# ReactJS Dashboard UI
 
-Tư duy component
+## 🎯 Mục tiêu
+- Làm quen với ReactJS thông qua việc xây dựng UI Dashboard
+- Hiểu cách React render UI và tái sử dụng component
+- Thực hành JSX, props, map(), component reuse
+- Styling bằng TailwindCSS
 
-Cách React render UI
+## 🛠 Công nghệ sử dụng
+- ReactJS (Function Component)
+- Vite
+- TailwindCSS
+- JavaScript ES6+
 
-Sử dụng JSX, props, .map()
+## 📁 Cấu trúc thư mục
 
-Styling với TailwindCSS
 
-🛠 Công nghệ
-
-ReactJS (Function Component)
-
-Vite
-
-TailwindCSS
-
-JavaScript ES6+
-
-📁 Cấu trúc chính
+```text
 src/
-├── components/
-│   ├── Sidebar.jsx
-│   ├── Topbar.jsx
-│   ├── StatCard.jsx
-│   └── QuickAction.jsx
-├── pages/
-│   ├── Login.jsx
-│   └── Dashboard.jsx
-├── App.jsx
+├─ components/
+│  ├─ Sidebar.jsx
+│  ├─ Topbar.jsx
+│  ├─ StatCard.jsx
+│  └─ QuickAction.jsx
+├─ pages/
+│  ├─ Login.jsx
+│  └─ Dashboard.jsx
+└─ App.jsx
 
-✨ Chức năng đã làm
-🔐 Login Page
+## 🔐 Login Page
+- Xây dựng giao diện đăng nhập (UI only)
+- Tách riêng thành page `Login.jsx`
+- Render thông qua `App.jsx`
 
-Giao diện đăng nhập (UI only)
+## 📊 Dashboard
+- Layout gồm: Sidebar + Topbar + Content
+- Sidebar:
+  - Render menu bằng `map()`
+  - Highlight item đang active
+- Stat Cards:
+  - Component tái sử dụng
+  - Truyền dữ liệu qua props
+- Quick Actions:
+  - Render danh sách action bằng `map()`
+  - Tránh lặp code
 
-Tách thành page riêng (Login.jsx)
-
-Render từ App.jsx
-
-📊 Dashboard
-
-Layout gồm: Sidebar, Topbar, Content
-
-Sidebar:
-
-Render menu bằng .map()
-
-Highlight item active
-
-Stat Cards:
-
-Component tái sử dụng
-
-Truyền dữ liệu qua props
-
-Quick Actions:
-
-Render danh sách action bằng .map()
-
-Tránh lặp code
-
-🧠 Kiến thức React áp dụng
-
-Function Component
-
-Props & component reuse
-
-Render list với .map() và key
-
-Hiểu sự khác nhau giữa map và forEach
-
-Sử dụng spread operator (...) để tạo mảng / object mới
-
-Không mutate dữ liệu gốc
-
-Tổ chức code theo component
-
-🎨 Giao diện
-
-Styling bằng TailwindCSS
-
-Sử dụng Flexbox, Grid
-
-Class động theo điều kiện
+## 📚 Kiến thức React áp dụng
+- Function Component
+- Props & component reuse
+- Render list với `map()` và `key`
+- Phân biệt `map()` và `forEach()`
+- Sử dụng spread operator (`...`) để tạo mảng / object mới
