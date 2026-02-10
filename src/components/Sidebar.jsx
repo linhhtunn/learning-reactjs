@@ -9,6 +9,7 @@ export default function Sidebar() {
 
       <ul className="space-y-2 text-sm">
         {[
+          //Mảng dữ liệu
           "Trang chủ",
           "Điểm danh",
           "Lớp học",
